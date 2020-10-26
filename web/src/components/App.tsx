@@ -1,7 +1,22 @@
+/*
+ * Import Dependancies
+ */
 import React from 'react';
 
+/*
+ *Import App Component Stylesheet
+ */
 import './App.css';
 
+/*
+ *Import Components
+ */
+
+/*
+ * type definitions / interfaces
+ */
+
+/** App component tooltip */
 class App extends React.Component {
   render() {
     return (
