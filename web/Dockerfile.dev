@@ -12,17 +12,18 @@ RUN apt-get -y install --no-install-recommends\
     libfontconfig
 
 EXPOSE 1234
+EXPOSE 5678
 
-WORKDIR /app
+WORKDIR /app/web
 
 COPY package*.json ./
 
 RUN npm install yarn --no-package-lock\
     && npm cache clean --force
-#RUN yarn global add parcel-bundler
 
-ENV PATH /app/node_modules/.bin:$PATH
+ENV PATH /app/web/node_modules/.bin:$PATH
 
 RUN yarn install
 
-CMD ["parcel", "index.html"]
+CMD ["yarn", "start-no-open"]
+#CMD ["parcel", "index.html --hmr-port 5678"]

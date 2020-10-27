@@ -15,6 +15,7 @@
   },
   "scripts": {
     "start": "parcel index.html --open",
+    "start-no-open": "parcel index.html --hmr-port 5678",
     "build": "parcel build index.html"
   }
 }
