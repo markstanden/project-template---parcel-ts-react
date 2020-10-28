@@ -19,14 +19,15 @@
     "ms-vscode.vscode-typescript-tslint-plugin",
     "esbenp.prettier-vscode",
     "bracket-pair-colorizer-2.colors",
-    "github.vscode-pull-request-github"
+    "github.vscode-pull-request-github",
+    "jpoissonnier.vscode-styled-components"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [1234, 5678]
+  "forwardPorts": [1234, 5678],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  //"postAttachCommand": "parcel ./web/index.html",
+  //"postAttachCommand": "parcel ./web/index.html --hmr-port 5678"
 
   // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
   // "remoteUser": "node"

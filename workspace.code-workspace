@@ -1,10 +1,12 @@
 {
   "folders": [
     {
-      "path": "."
+      "path": ".",
     }
   ],
   "settings": {
+    // Statting CWD for the integrated terminal
+    "terminal.integrated.cwd": "./web"
     // Prettier
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
@@ -17,10 +19,10 @@
       // ESLint
       "source.fixAll.eslint": true
     },
-
     //autosave
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 10000,
+    "files.autoSaveDelay": 5000,
+    
     // Get out of my way
     "editor.minimap.enabled": false,
 
@@ -40,7 +42,8 @@
       "**/dist/**": true,
       "**/log /**": true,
       "**/logs/**": true,
-      "**/.fdk/**": true
+      "**/.fdk/**": true,
+      "**/.cache/**": true
     },
     "files.exclude": {
       "**/.git/objects/**": true,
@@ -56,7 +59,8 @@
       "**/bower_components": true,
       "**/dist/**": true,
       "**/log/**": true,
-      "**/.fdk/**": true
+      "**/.fdk/**": true,
+      "**/.cache/**": true
     },
     "search.exclude": {
       "**/.git/objects/**": true,
@@ -71,7 +75,8 @@
       "**/node_modules": true,
       "**/bower_components": true,
       "**/dist/**": true,
-      "**/log/**": true
+      "**/log/**": true,
+      "**/.cache/**": true
     }
   }
 }
