@@ -5,6 +5,7 @@
     }
   ],
   "settings": {
+    "terminal.integrated.cwd": "./web",
     // Prettier
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
