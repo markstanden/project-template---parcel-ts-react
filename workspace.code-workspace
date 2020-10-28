@@ -6,7 +6,7 @@
   ],
   "settings": {
     // Statting CWD for the integrated terminal
-    "terminal.integrated.cwd": "./web"
+    "terminal.integrated.cwd": "./web",
     // Prettier
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
