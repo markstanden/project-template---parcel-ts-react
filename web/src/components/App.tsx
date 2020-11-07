@@ -101,22 +101,30 @@ const GlobalStyle = createGlobalStyle`
  * type definitions / interfaces
  */
 
-/** The base component for the app */
-const App: FunctionComponent = () => {
-  /* Create a state variable, theme, responsible for toggling between themes. */
-  const [theme, setTheme]: [
-    MyThemeProps,
-    Dispatch<SetStateAction<MyThemeProps>>
-  ] = useState(lightTheme);
+/**
+   * Create a state variable - theme - 
+  responsible for toggling between themes.
+  */
+const [theme, setTheme]: [
+  MyThemeProps,
+  Dispatch<SetStateAction<MyThemeProps>>
+] = useState(lightTheme);
 
-  const toggleTheme = () => {
-    return setTheme((prevState) => {
-      /* if the old state(theme) is light, then set new state(theme) to darkTheme,
+/**
+ * Highlevel Helper function to toggle between light and dark themes
+ */
+const toggleTheme = () => {
+  return setTheme((prevState) => {
+    /* if the old state(theme) is light, then set new state(theme) to darkTheme,
               if not(presumably it's dark...) set to lightTheme */
-      return prevState.ID === themeID.light ? darkTheme : lightTheme;
-    });
-  };
+    return prevState.ID === themeID.light ? darkTheme : lightTheme;
+  });
+};
 
+/**
+ * The base component for the app
+ * */
+const App: FunctionComponent = () => {
   return (
     <>
       <ThemeProvider
